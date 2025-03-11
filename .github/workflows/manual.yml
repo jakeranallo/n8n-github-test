@@ -17,7 +17,7 @@ on:
         required: true
         # The data type of the input
         type: string
-      resumeURL:
+      resumeUrl:
         required: true
         # The data type of the input
         type: string
@@ -34,4 +34,4 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
-           echo "Return ${{ inputs.resumeURL }}"
+           echo "Return ${{ inputs.resumeUrl }}"
