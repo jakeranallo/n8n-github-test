@@ -35,3 +35,7 @@ jobs:
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }}"
            echo "Return ${{ inputs.resumeUrl }}"
+    - name: Trigger Webhook
+      run: |
+          curl -X POST ${{ inputs.resumeUrl }} \
+          -H "Content-Type: application/json" \
